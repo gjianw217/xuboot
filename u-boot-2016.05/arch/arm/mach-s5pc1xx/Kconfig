@@ -11,7 +11,14 @@ config TARGET_S5P_GONI
 config TARGET_SMDKC100
 	bool "Support smdkc100 board"
 	select OF_CONTROL
-
+	
+config TARGET_SMDKV210
+	bool "Support Samsung smdkv210"
+	select SUPPORT_SPL
+	select SPL
+		help
+		Support Samsung OK210platform based on Samsung s5pv210.
+		
 endchoice
 
 config SYS_SOC
@@ -19,5 +26,6 @@ config SYS_SOC
 
 source "board/samsung/goni/Kconfig"
 source "board/samsung/smdkc100/Kconfig"
+source "board/samsung/smdkv210/Kconfig"
 
 endif
