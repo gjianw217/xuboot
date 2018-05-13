@@ -12,4 +12,6 @@ obj-y	:= smdkv210.o
 obj-$(CONFIG_SAMSUNG_ONENAND)	+= onenand.o
 obj-y	+= lowlevel_init.o
 obj-y	+= clock_init.o
+obj-y	+= sdram_init.o
 obj-y	+= led.o
+
