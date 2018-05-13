@@ -102,8 +102,8 @@ int board_eth_init(bd_t *bis)
 #define BL1_SIZE			(BL1_SECTOR_NUM*SD_SECTOR_SIZE)	/*16KB*/
 
 #define BL2_START_SECTOR	(BL1_START_SECTOR+BL1_SECTOR_NUM)
-#define BL2_SECTOR_NUM		(512*1)
-#define BL2_SIZE			(BL2_SECTOR_NUM*SD_SECTOR_SIZE)	/*256*1KB*/
+#define BL2_SECTOR_NUM		(512*2)
+#define BL2_SIZE			(BL2_SECTOR_NUM*SD_SECTOR_SIZE)	/*256*2KB*/
 
 void copy_bl2_to_ram(void)
 {
