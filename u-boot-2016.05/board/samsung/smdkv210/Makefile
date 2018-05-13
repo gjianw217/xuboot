@@ -8,6 +8,8 @@
 # SPDX-License-Identifier:	GPL-2.0+
 #
 
-obj-y	:= smdkc100.o
+obj-y	:= smdkv210.o
 obj-$(CONFIG_SAMSUNG_ONENAND)	+= onenand.o
 obj-y	+= lowlevel_init.o
+obj-y	+= clock_init.o
+obj-y	+= led.o

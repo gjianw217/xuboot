@@ -20,8 +20,13 @@
 lowlevel_init:
 	mov	r9, lr
 
-	mov	lr, r9
-	mov	pc, lr
+	#ifdef CONFIG_SPL_BUILD
+	bl system_clock_init
+	
+	#else
+	
+	
+	#endif
 
 
-	mov	pc, lr
+	mov	pc, r9			/* 返回 */
