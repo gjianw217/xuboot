@@ -140,10 +140,10 @@
 /*-----------------------------------------------------------------------
  * Boot configuration
  */
-#define CONFIG_ENV_IS_IN_NAND
-#define CONFIG_ENV_SIZE			(128 << 10)	/* 128KiB, 0x20000 */
-#define CONFIG_ENV_ADDR			(256 << 10)	/* 256KiB, 0x40000 */
-#define CONFIG_ENV_OFFSET		(256 << 10)	/* 256KiB, 0x40000 */
+#define CONFIG_ENV_IS_IN_NAND	1
+#define CONFIG_ENV_SIZE			(512 << 10)	/* 512KiB, 0x80000 */
+#define CONFIG_ENV_ADDR			(1 << 20)	/* 1MB, 0x100000 */
+#define CONFIG_ENV_OFFSET		(1 << 20)	/* 1MB, 0x100000 */
 
 
 #define CONFIG_DOS_PARTITION		1
@@ -163,7 +163,7 @@
 #define DM9000_DATA				(CONFIG_DM9000_BASE + 0x4)
 #define CONFIG_CMD_PING
 #define CONFIG_IPADDR			192.168.1.121
-#define CONFIG_SERVERIP			192.168.1.108
+#define CONFIG_SERVERIP			192.168.1.103
 #define CONFIG_ETHADDR			1A:2A:3A:4A:5A:6A
 #endif /* CONFIG_CMD_NET */
 
